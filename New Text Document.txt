@@ -1,0 +1,239 @@
+E:\learning\laravel\filament\laravel_filament_self_project_2>php artisan make:filament-relation-manager
+
+  Which resource would you like to create this relation manager in?
+❯ CourseResource
+
+  Which resource would you like to create this relation manager in?
+  Courses .............................................................. App\Filament\Resources\Courses\CourseResource
+❯ Courses
+
+  What is the relationship?
+❯ students
+
+ Linking to an existing resource will open the resource's pages instead of modals when links are clicked. It will also inherit the resource's configuration.
+
+  Do you want to link this to an existing resource? (yes/no) [no]
+❯ yes
+
+  Which resource do you want to use?
+❯ s
+
+  Which resource do you want to use?
+  Courses .............................................................. App\Filament\Resources\Courses\CourseResource
+  Students ........................................................... App\Filament\Resources\Students\StudentResource
+❯ Students
+
+   INFO  Filament relation manager [App\Filament\Resources\Courses\RelationManagers\StudentsRelationManager] created successfully.
+
+   INFO  Make sure to register the relation in [App\Filament\Resources\Courses\CourseResource::getRelations()].
+
+
+E:\learning\laravel\filament\laravel_filament_self_project_2>php artisan make:filament-relation-manager
+
+  Which resource would you like to create this relation manager in?
+❯ Courses
+
+  Which resource would you like to create this relation manager in?
+  Courses .............................................................. App\Filament\Resources\Courses\CourseResource
+❯ Courses
+
+  What is the relationship?
+❯ students
+
+ Linking to an existing resource will open the resource's pages instead of modals when links are clicked. It will also inherit the resource's configuration.
+
+  Do you want to link this to an existing resource? (yes/no) [no]
+❯ no
+
+  Should there be a read-only "view" modal on the relation manager? (yes/no) [no]
+❯ yes
+
+  Should the configuration be generated from the current database columns? (yes/no) [no]
+❯ yes
+
+ The "title attribute" is used to label each record in the UI.
+
+  What is the title attribute for this model?
+❯ name
+
+   INFO  Filament relation manager [App\Filament\Resources\Courses\RelationManagers\StudentsRelationManager] created successfully.
+
+   INFO  Make sure to register the relation in [App\Filament\Resources\Courses\CourseResource::getRelations()].
+
+
+E:\learning\laravel\filament\laravel_filament_self_project_2>php artisan make:filament-relation-manager
+
+  Which resource would you like to create this relation manager in?
+❯ Student
+
+  Which resource would you like to create this relation manager in?
+  Students ........................................................... App\Filament\Resources\Students\StudentResource
+❯ Students
+
+  What is the relationship?
+❯ courses
+
+ Linking to an existing resource will open the resource's pages instead of modals when links are clicked. It will also inherit the resource's configuration.
+
+  Do you want to link this to an existing resource? (yes/no) [no]
+❯ no
+
+  Should there be a read-only "view" modal on the relation manager? (yes/no) [no]
+❯ yes
+
+  Should the configuration be generated from the current database columns? (yes/no) [no]
+❯ yes
+
+ The "title attribute" is used to label each record in the UI.
+
+  What is the title attribute for this model?
+❯ title
+
+   INFO  Filament relation manager [App\Filament\Resources\Students\RelationManagers\CoursesRelationManager] created successfully.
+
+   INFO  Make sure to register the relation in [App\Filament\Resources\Students\StudentResource::getRelations()].
+
+
+E:\learning\laravel\filament\laravel_filament_self_project_2>composer require barryvdh/laravel-dompdf
+./composer.json has been updated
+Running composer update barryvdh/laravel-dompdf
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 6 installs, 0 updates, 0 removals
+  - Locking barryvdh/laravel-dompdf (v3.1.1)
+  - Locking dompdf/dompdf (v3.1.4)
+  - Locking dompdf/php-font-lib (1.0.1)
+  - Locking dompdf/php-svg-lib (1.0.2)
+  - Locking sabberworm/php-css-parser (v9.1.0)
+  - Locking thecodingmachine/safe (v3.3.0)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 6 installs, 0 updates, 0 removals
+  - Downloading thecodingmachine/safe (v3.3.0)
+  - Downloading sabberworm/php-css-parser (v9.1.0)
+  - Downloading dompdf/php-svg-lib (1.0.2)
+  - Installing thecodingmachine/safe (v3.3.0): Extracting archive
+2 package suggestions were added by new dependencies, use `composer suggest` to see details.
+Generating optimized autoload files1.0.2): Extracting archive
+> Illuminate\Foundation\ComposerScripts::postAutoloadDumpchive
+> @php artisan package:discover --ansi Extracting archive
+  - Installing barryvdh/laravel-dompdf (v3.1.1): Extracting archive
+   INFO  Discovering packages.  ---]
+
+  anourvalar/eloquent-serialize ................................................................................. DONE
+  barryvdh/laravel-dompdf ....................................................................................... DONE
+  blade-ui-kit/blade-heroicons .................................................................................. DONE
+  blade-ui-kit/blade-icons ...................................................................................... DONE
+  filament/actions .............................................................................................. DONE
+  filament/filament ............................................................................................. DONE
+  filament/forms ................................................................................................ DONE
+  filament/infolists ............................................................................................ DONE
+  filament/notifications ........................................................................................ DONE
+  filament/query-builder ........................................................................................ DONE
+  filament/schemas .............................................................................................. DONE
+  filament/support .............................................................................................. DONE
+  filament/tables ............................................................................................... DONE
+  filament/widgets .............................................................................................. DONE
+  kirschbaum-development/eloquent-power-joins ................................................................... DONE
+  laravel/pail .................................................................................................. DONE
+  laravel/sail .................................................................................................. DONE
+  laravel/tinker ................................................................................................ DONE
+  livewire/livewire ............................................................................................. DONE
+  nesbot/carbon ................................................................................................. DONE
+  nunomaduro/collision .......................................................................................... DONE
+  nunomaduro/termwind ........................................................................................... DONE
+  pestphp/pest-plugin-laravel ................................................................................... DONE
+  ryangjchandler/blade-capture-directive ........................................................................ DONE
+
+> @php artisan filament:upgrade
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\forms\components\checkbox-list.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\forms\components\code-editor.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\forms\components\color-picker.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\forms\components\date-time-picker.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\forms\components\file-upload.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\forms\components\key-value.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\forms\components\markdown-editor.js 
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\forms\components\rich-editor.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\forms\components\select.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\forms\components\slider.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\forms\components\tags-input.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\forms\components\textarea.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\schemas\components\actions.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\schemas\components\tabs.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\schemas\components\wizard.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\tables\components\columns\checkbox.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\tables\components\columns\select.js 
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\tables\components\columns\text-input.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\tables\components\columns\toggle.js 
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\widgets\components\chart.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\widgets\components\stats-overview\stat\chart.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\index.css
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-cyrillic-ext-wght-normal-ASVAGXXE.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-cyrillic-ext-wght-normal-IYF56FF6.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-cyrillic-ext-wght-normal-XKHXBTUO.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-cyrillic-wght-normal-EWLSKVKN.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-cyrillic-wght-normal-JEOLYBOO.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-cyrillic-wght-normal-R5CMSONN.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-greek-ext-wght-normal-7GGTF7EK.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-greek-ext-wght-normal-EOVOK2B5.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-greek-ext-wght-normal-ZEVLMORV.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-greek-wght-normal-AXVTPQD5.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-greek-wght-normal-IRE366VL.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-greek-wght-normal-N43DBLU2.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-latin-ext-wght-normal-5SRY4DMZ.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-latin-ext-wght-normal-GZCIV3NH.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-latin-ext-wght-normal-HA22NDSG.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-latin-wght-normal-NRMW37G5.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-latin-wght-normal-O25CN4JL.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-latin-wght-normal-OPIJAQLS.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-vietnamese-wght-normal-CE5GGD3W.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\fonts\filament\filament\inter\inter-vietnamese-wght-normal-TWG5UU7E.woff2
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\actions\actions.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\filament\app.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\filament\echo.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\notifications\notifications.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\schemas\schemas.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\support\support.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\js\filament\tables\tables.js
+  ⇂ E:\learning\laravel\filament\laravel_filament_self_project_2\public\css\filament\filament\app.css
+
+   INFO  Successfully published assets!
+
+   INFO  Configuration cache cleared successfully.
+
+   INFO  Route cache cleared successfully.
+
+   INFO  Compiled views cleared successfully.
+
+   INFO  Successfully upgraded!
+
+107 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+> @php artisan vendor:publish --tag=laravel-assets --ansi --force
+
+   INFO  No publishable resources for tag [laravel-assets].
+
+No security vulnerability advisories found.
+Using version ^3.1 for barryvdh/laravel-dompdf
+
+E:\learning\laravel\filament\laravel_filament_self_project_2>
+E:\learning\laravel\filament\laravel_filament_self_project_2>
+E:\learning\laravel\filament\laravel_filament_self_project_2>
+E:\learning\laravel\filament\laravel_filament_self_project_2>
+E:\learning\laravel\filament\laravel_filament_self_project_2>
+E:\learning\laravel\filament\laravel_filament_self_project_2>
+E:\learning\laravel\filament\laravel_filament_self_project_2>
+E:\learning\laravel\filament\laravel_filament_self_project_2>
+E:\learning\laravel\filament\laravel_filament_self_project_2>php artisan make:controller CertificateController
+
+   INFO  Controller [E:\learning\laravel\filament\laravel_filament_self_project_2\app\Http\Controllers\CertificateController.php] created successfully.
+
+
+E:\learning\laravel\filament\laravel_filament_self_project_2>php artisan make:view certificates/course
+
+   INFO  View [E:\learning\laravel\filament\laravel_filament_self_project_2\resources\views\certificates\course.blade.php] created successfully.
+
+
+E:\learning\laravel\filament\laravel_filament_self_project_2>php artisan make:view filament/tables/certificate-button
+
+   INFO  View [E:\learning\laravel\filament\laravel_filament_self_project_2\resources\views\filament\tables\certificate-button.blade.php] created successfully.
